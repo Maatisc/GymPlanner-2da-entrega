@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Configuracion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+
+  <div>
+    <ion-item>
+      <ion-label color="light">Habilitar Face ID</ion-label>
+      <ion-toggle slot="end" checked [enableOnOffLabels]="true"></ion-toggle>
+    </ion-item>
+  </div>
+  
+  <div>
+    <ion-item>
+      <ion-label color="light">Permitir ver Nombre a otros Miembros</ion-label>
+      <ion-toggle slot="end" checked [enableOnOffLabels]="true"></ion-toggle>
+    </ion-item>
+  </div>
+
+  <div>
+    <ion-item>
+      <ion-label position="stacked">Nombre </ion-label>
+      <ion-input placeholder="Introducir Nombre"></ion-input>
+    </ion-item>
+  </div>
+
+  <div id="botonLogout">
+    <ion-item>
+      <ion-button size="default" >
+        <ion-icon slot="start" name="log-out-outline"></ion-icon>
+        Desconectarse
+      </ion-button>
+    </ion-item>
+  </div>
+
+  
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>
+      Gym Planner Chile ©
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

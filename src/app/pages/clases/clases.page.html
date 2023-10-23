@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Informacion Clases</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>
+
+<ion-footer>
+  <ion-segment (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="detalles">
+      <ion-icon name="alert-circle-outline"></ion-icon>Detalles
+    </ion-segment-button>
+    <ion-segment-button value="alumnos">
+      <ion-icon name="people-outline"></ion-icon>Alumnos
+    </ion-segment-button>
+    <ion-segment-button value="horarios">
+      <ion-icon name="alarm-outline"></ion-icon>Horarios
+    </ion-segment-button>
+  </ion-segment>
+</ion-footer>
+
